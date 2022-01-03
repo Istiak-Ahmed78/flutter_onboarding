@@ -2,7 +2,7 @@ name: flutter_onboarding
 description: This is flutter package that assists to show onboarding screen in flutter app
 version: 0.0.1
 auther: Istiak Ahmed<aistiak2078@gmail.com>
-homepage:
+homepage: https://github.com/Istiak-Ahmed78/flutter_onboarding.git
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
