@@ -3,6 +3,9 @@ on:
  push:
   barnches:
     - main
+ pull-request:
+  branches:
+    - main
 jobs:
   flutter_test:
     name: Run flutter test and analysis
