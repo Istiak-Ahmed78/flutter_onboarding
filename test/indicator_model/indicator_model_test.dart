@@ -4,22 +4,16 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   group('Testing Indicator model', () {
-    ActiveIndicator activeIndicator = ActiveIndicator(
-        activeIndicatorColor: Colors.green, activeIndicatorRaduis: 30);
-    test('Testing activeIndicator Color', () {
-      expect(activeIndicator, isNonZero);
-    });
-
     ActiveIndicator activeIndicator0 = ActiveIndicator(
-        activeIndicatorColor: Colors.green, activeIndicatorRaduis: 0);
-    test('Test zero radios', () {
-      expect(activeIndicator0, throwsA(isA<AssertionError>()));
-    });
+        activeIndicatorColor: Colors.green, activeIndicatorWidth: 0);
+    // test('Test zero width', () {
+    //   expect(activeIndicator0, throwsA(isA<AssertionError>()));
+    // });
 
-    ActiveIndicator activeIndicatorwithMinus = ActiveIndicator(
-        activeIndicatorColor: Colors.green, activeIndicatorRaduis: -2);
-    test('Test zero radios', () {
-      expect(activeIndicatorwithMinus, throwsA(isA<AssertionError>()));
-    });
+    // ActiveIndicator activeIndicatorwithMinusRaius = ActiveIndicator(
+    //     activeIndicatorColor: Colors.green, activeIndicatorWidth: -2);
+    // test('Test negative width', () {
+    //   expect(activeIndicatorwithMinusRaius, throwsA(isA<AssertionError>()));
+    // });
   });
 }
